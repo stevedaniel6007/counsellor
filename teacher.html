@@ -14,183 +14,83 @@
   <center>
   <h1 style="color: violet;">STUDENT REGISTRY👩‍🏫</h1>
   <form>
-    <table>
-        <tr>
-            <td>
-                Select Type Of Gamer
-            </td>
-            <td>
-            <select>
-                <option>
-                TTS
-                </option>
-                <option>
-                    LVS
-                </option>
-                <option>
-                   HSS
-            </select>
-            </td>
+    <label>
+        Select School
+    </label>
+    <input class="myinput"></input>
+    <label>
+        Name
+    </label>
+    <input class="myinput"></input>
+    <label>
+        Student Information
+    </label>
+    <textarea class="myinput"></textarea>
+    <label>
+        Age
+    </label>
+    <input class="myinput"></input>
+    <label>
+        Gender
+    </label>
+    <input class="myinput"></input>
+    <label>
+        Grade/Section
+    </label>
+    <input class="myinput"></input>
 
-        </tr>
-        <tr>
-            <td>NAME</td>
-            <td><input type="text" placeholder="Enter your Name"></td>
-        </tr>
-        <tr>
-            <td>STUDENT INFORMATION</td>
-            <td><input type="text" placeholder="Enter your Information"></td>
-        </tr>
-        <tr>
-            <td>Age</td>
-            <td><input type="number" placeholder="Enter Your Age"></td>
-            
-        </tr>
-        <tr>
-            <td>Gender</td>
-            <td><input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female</td>
-            
-        </tr>
-        <tr>
-            <td>Grade/Class: </td>
-            <td><input type="radio" name=[Grade/Class]>GRADE</td>
-            <td><input type="radio" name=[Grade/Class]>CLASS</td>
-        </tr>
-        <tr>
-            <td>
-                Class Teacher
-            </td>
-            <td><input type="text" placeholder="ENTER CLASS TEACHERS NAME"></td>
-        </tr>
-        <tr>
-            <td>
-                Counselling Session Details
-            </td><td>
-                            <form>
-                <label for="paragraph"></label>
-                <textarea id="paragraph" name="paragraph" rows="4" cols="50"></textarea>
-                <br>
-               
-            </form>
-                
-            </td>
+    <label>
+        Class Teacher
+    </label>
+    <input class="myinput"></input>
 
-            
-        </tr>
-        <tr>
-            <td>
-                Date
-            </td><td> <form>
-                <label for="date"></label>
-                <input type="date" id="date" name="date">
-                <br>
-                
-            </form></td>
-           
-        </tr>
-        <tr>
-            <td>
-                TIME
-            </td>
-            <td>
-                
-              
+    <label>
+        Counselling Session Details
+    </label>
+    <input class="myinput"></input>
+    <label>
+        Date
+    </label>
+    <input type="date" class="myinput"></input>
+
+    <label>
+        LOCATION	
+    </label>
+    <input class="myinput"></input>
+    <label>
+        Counsellor    </label>
+    <input class="myinput"></input>
+    <label>
+        Reason for Counselling	
+    </label>
+    <textarea class="myinput"></textarea>
+    <label>
+        Session Notes	
+    </label>
+    <textarea class="myinput"></textarea>
 
 
-    <form>
-        <label for="time"></label>
-        <input type="time" id="time" name="time">
-        <br>
-       
-    </form>
+</form>
+<button onclick="push()">Submit</button>
 
-            </td>
-        </tr>
-        <tr>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              LOCATION
-            </td>
-            <td>
-            <select>
-                <option>
-                TTS
-                </option>
-                <option>
-                    LVS
-                </option>
-                <option>
-                   HSS
-            </select>
-            </td> <br>
-
-        </tr>
-        <tr>
-            <td>
-                Counsellor 
-                <td><input type="text" placeholder="Full Name"></td>
-            </td>
-                   </tr>
-                   <tr>
-                    <td>
-                        Reason for Counselling
-                    </td>
-                    <td>
-                        <form>
-                            <label for="paragraph"></label>
-                            <textarea id="paragraph" name="paragraph" rows="4" cols="50"></textarea>
-                            <br>
-                           
-                        </form>
-                    </td>
-                    
-                   </tr>
-                   <tr>
-                    <td>
-                        Session Notes
-                    </td>
-                    <td>
-                        <form>
-                            <label for="paragraph"></label>
-                            <textarea id="paragraph" name="paragraph" rows="4" cols="50"></textarea>
-                            <br>
-                           
-                        </form>
-                    </td>
-
-                   </tr>
-        
-       
-              
- 
-        
-            <td>
-                Student Profile
-            </td>
-            <td>
-                <input type="file">
-            </td>
-                    </tr>
-<tr>
-    <td></td>
-    <td>
-        <input type="submit">
-    </td>
-    <td> <input type="reset"></td>
-
-</tr>
-    </table>
-  </form><hr>
+  <hr>
   <p>
     <center><h3> <a href="teachersregistry.html" style="color: darkmagenta;">Home</a> </center>
 </p> 
 </center>
+<script>
+    const myarr = [];
 
+    const onlyInputs = document.querySelectorAll('.myinput');
+    function push(){
+    onlyInputs.forEach((element)=>{
+        console.log(element.value)
+        myarr.push(elements)
+    })
+    
+    console.log(onlyInputs)
+}
+    </script>
 
 </body>
 </html>
